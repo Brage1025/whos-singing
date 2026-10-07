@@ -37,7 +37,7 @@ A single high score isn't proof, which is why repeated detections count for more
 
 - Python 3.9+ (3.11 or 3.12 recommended, since TensorFlow can lag behind the newest Python)
 - About 3 GB of disk space (BirdNET model plus the LLM)
-- [Ollama](https://ollama.com) (optional, only for the note)
+- [Ollama](https://ollama.com) (for the field note)
 
 ## Install
 
@@ -153,7 +153,7 @@ I couldn't get out on a walk this week, so I tested on real-world field recordin
 
 - **`ollama: command not found`**: restart VS Code or your terminal after installing Ollama, or try PowerShell.
 - **"model not found. Run: ollama pull ..."**: pull the model named in the message.
-- **"Ollama not reachable"**: make sure the Ollama app is running (or run `ollama serve`). The bird list still works without it.
+- **"Ollama not reachable"**: make sure the Ollama app is running (or run `ollama serve`). The bird list should still work without it.
 - **No birds detected**: try `--min-conf 0.1`, and make sure the recording is loud and clear enough.
 - **`pip install` fails on Windows**: check your Python version and try 3.11 or 3.12.
 
