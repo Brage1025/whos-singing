@@ -1,0 +1,4 @@
+.venv/
+recordings/
+bird_log.csv
+__pycache__/
