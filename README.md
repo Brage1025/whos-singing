@@ -4,6 +4,8 @@ An offline bird-call identifier for your walks. Record 30-60 seconds of audio on
 
 Built for the Hacktoberfest Open-Source AI Challenge, Week 1: **Touch Grass**.
 
+**Demo:** [Watch it run with Wi-Fi off](https://youtu.be/g2nv-HsVla0)
+
 The screen is the shortest part of the experience: you spend your time outside listening, and only check the laptop at the end.
 
 ## Why open-source AI?
@@ -37,7 +39,7 @@ A single high score isn't proof, which is why repeated detections count for more
 
 - Python 3.9+ (3.11 or 3.12 recommended, since TensorFlow can lag behind the newest Python)
 - About 3 GB of disk space (BirdNET model plus the LLM)
-- [Ollama](https://ollama.com) (for the field note)
+- [Ollama](https://ollama.com) (optional, only for the note)
 
 ## Install
 
@@ -120,7 +122,7 @@ This is a small test on one recording, not a benchmark. The point is that with o
 
 ## Testing on real recordings
 
-I couldn't get out on a walk this week, so I tested on real-world field recordings instead: one of my own and one from a friend's trip, run with Wi-Fi off.
+I couldn't get out on a walk this week, so I tested on real-world bird recordings instead: an old recording of my own and two shared by a friend (who prefers to stay anonymous), all run with Wi-Fi off. Only the last recording has ground truth, because my friend knew what was there.
 
 **Recording from a friend's trip** (`--lat 59.91 --lon 10.75`):
 
@@ -153,7 +155,7 @@ I couldn't get out on a walk this week, so I tested on real-world field recordin
 
 - **`ollama: command not found`**: restart VS Code or your terminal after installing Ollama, or try PowerShell.
 - **"model not found. Run: ollama pull ..."**: pull the model named in the message.
-- **"Ollama not reachable"**: make sure the Ollama app is running (or run `ollama serve`). The bird list should still work without it.
+- **"Ollama not reachable"**: make sure the Ollama app is running (or run `ollama serve`). The bird list still works without it.
 - **No birds detected**: try `--min-conf 0.1`, and make sure the recording is loud and clear enough.
 - **`pip install` fails on Windows**: check your Python version and try 3.11 or 3.12.
 
