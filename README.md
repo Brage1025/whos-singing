@@ -168,3 +168,12 @@ I couldn't get out on a walk this week, so I tested on real-world bird recording
 - [BirdNET](https://github.com/birdnet-team/BirdNET-Analyzer) by the K. Lisa Yang Center for Conservation Bioacoustics (Cornell Lab of Ornithology) and Chemnitz University of Technology. The model is open-weight but has non-commercial license conditions, so check their repository for the current terms.
 - [Ollama](https://ollama.com), [Qwen2.5](https://huggingface.co/Qwen), and [Llama 3.2](https://www.llama.com/llama3_2/license/), each under its own license.
 - The code in this repository is released under the MIT License. See `LICENSE`.
+
+---
+
+<div align="center">
+
+_"To &lt;div&gt; or not to &lt;div&gt;, that is the question."_
+— [Brage1025](https://github.com/Brage1025)
+
+</div>
